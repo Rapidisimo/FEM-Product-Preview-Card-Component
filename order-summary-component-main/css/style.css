@@ -1,0 +1,179 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End Reset */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: repeat-x;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+p {
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    padding: .5em;
+}
+
+a {
+    font-weight: 700;
+}
+
+.container {
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-image: url(../images/illustration-hero.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+    padding: 190px 25px 20px 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 14px 24px 1px rgba(0,0,0,0.16);
+}
+
+.plan {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    padding: 15px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30px 1fr;
+    align-items: center;
+    grid-template-areas: 
+        'm-note a-plan change'
+        'm-note price change';
+    margin-top: 10px;
+}
+
+.m-note {
+    grid-area: m-note;
+    margin: auto;
+}
+.a-plan {
+    grid-area: a-plan;
+    padding: 0;
+    font-weight: 900;
+    color: black;
+}
+.price {
+    grid-area: price;
+    margin-top: 0;
+    padding: 0;
+}
+.change {
+    grid-area: change;
+}
+
+button {
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0;
+    border: 0;
+    border-radius: 10px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: 900;
+    box-shadow: 0px 8px 14px 1px rgba(0,0,0,0.16);
+}
+button:hover {
+    background-color: hsl(245, 75%, 72%);
+    cursor: pointer;
+}
+
+.btn-cancel {
+    background-color: white;
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+    box-shadow: 0px 0px 0px 0px #fff;
+}
+.btn-cancel:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+/* Media Queries */
+
+@media (min-width: 470px) {
+
+    body {
+        background-image: url(../images/pattern-background-desktop.svg);
+    }
+    .card {
+        padding: 260px 50px 20px 50px;
+        max-width: 495px;
+    }
+    
+    .plan {
+        margin-bottom: 20px;
+    }
+    .a-plan,
+    .price {
+        text-align: left;
+    }
+
+}
