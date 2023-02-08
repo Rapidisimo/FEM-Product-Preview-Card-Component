@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [FEM Solution Page](#)
+- Solution URL: [FEM Solution Page](https://www.frontendmentor.io/solutions/product-preview-card-component-RCEvQ2c-8h)
 - Live Site URL: [Add live site URL here](https://rapidisimo.github.io/FEM-Product-Preview-Card-Component/)
 
 ## My process
